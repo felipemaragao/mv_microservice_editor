@@ -17,8 +17,8 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: editor-design
-        uri: lb://editor-design
+      - id: editor-designer
+        uri: lb://editor-designer
         predicates:
         - Path=/mveditor/**
         filters:
