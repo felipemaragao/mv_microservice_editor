@@ -12,9 +12,9 @@ logging:
 
 zuul:
   routes:
-    design:
+    editor-design:
       path: /mveditor/**
       serviceId: editor-design
-    executor:
+    editor-executor:
       path: /mveditor/api/**
       serviceId: editor-executor
