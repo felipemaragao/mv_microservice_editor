@@ -22,10 +22,10 @@ spring:
         predicates:
         - Path=/mveditor/**
         filters:
-        - RewritePath=/design/(?<path>.*), /$\{path}
+        - RewritePath=/mveditor/(?<path>.*), /$\{path}
       - id: editor-executor
         uri: lb://editor-executor
         predicates:
         - Path=/mveditor/api/**
         filters:
-        - RewritePath=/executor/(?<path>.*), /$\{path}
+        - RewritePath=/mveditor/(?<path>.*), /$\{path}
