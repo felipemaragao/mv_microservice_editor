@@ -18,13 +18,13 @@ spring:
           enabled: true
       routes:
       - id: editor-designer
-        uri: lb://editor-designer
+        uri: lb://mveditor
         predicates:
         - Path=/mveditor/**
         filters:
         - RewritePath=/mveditor/(?<path>.*), /$\{path}
       - id: editor-executor
-        uri: lb://editor-executor
+        uri: lb://mveditor/api
         predicates:
         - Path=/mveditor/api/**
         filters:
