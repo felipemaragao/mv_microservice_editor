@@ -14,7 +14,7 @@ zuul:
   routes:
     editor-designer:
       path: /mveditor/**
-      serviceId: mveditor
+      serviceId: mveditor/designer
     editor-executor:
-      path: /mveditor/api/**
-      serviceId: mveditor/api
+      path: /mveditor/**
+      serviceId: mveditor/executor
